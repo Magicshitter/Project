@@ -62,8 +62,31 @@ function displayScore() {
   }
   if (score === 100) {
     textSize(10);
-    text('You beat the game! now get off', 50, 100); 
+    text('You beat the game! now get off', 10, 100); 
+    text('the damn game bro you got to ', 10, 110); 
+    text('to score 100. do you have a', 20, 120); 
+    text('life?', 80, 130); 
+
   }
+  if (score === 102) {
+    textSize(10);
+    text('no way ur still going bro', 20, 100); 
+  }
+
+  if (score === 103) {
+    textSize(10);
+    text('alright bro im resetting you', 10, 100); 
+  }
+
+  if (score === 104) {
+    textSize(10);
+    text('the code isnt complete but 5', 10, 100); 
+    text('more balls are supposed', 20, 110);
+    text('to spawn', 70, 120);  
+
+  }
+
+
 }
 
 // ball spawning
