@@ -1,3 +1,5 @@
+// SECTION 1
+
 let ballX1, ballY1, ballSize1, ballColor1;
 let ballX2, ballY2, ballSize2, ballColor2;
 let ballX3, ballY3, ballSize3, ballColor3;
@@ -10,6 +12,7 @@ function preload() {
   customFont = loadFont('2.ttf'); 
 }
 
+// SECTION 2
 // spawning ball
 function setup() {
   createCanvas(200, 200);
@@ -22,6 +25,7 @@ function setup() {
   spawnBall5();
 }
 
+// SECTION 3
 // drawing the actual balls
 function draw() {
   background(220);
@@ -38,6 +42,7 @@ function drawBall(x, y, size, color) {
   ellipse(x, y, size, size);
 }
 
+// SECTION 4
 // displaying the score and if function for goodjob
 function displayScore() {
   fill(0);
@@ -89,6 +94,7 @@ function displayScore() {
 
 }
 
+// SECTION 5
 // ball spawning
 function spawnBall1() {
   ballX1 = random(ballSize1, width - ballSize1);
@@ -119,6 +125,7 @@ function spawnBall5() {
   ballColor5 = color(random(255), random(255), random(255));
 }
 
+// SECTION 6
 // change color
 function keyPressed() {
   changeBallColors();
@@ -132,6 +139,7 @@ function changeBallColors() {
   ballColor5 = color(random(255), random(255), random(255));
 }
 
+// SECTION 7
 // mouse pressing function
 function mousePressed() {
   checkBallClick(ballX1, ballY1, ballSize1, spawnBall1);
@@ -141,6 +149,7 @@ function mousePressed() {
   checkBallClick(ballX5, ballY5, ballSize5, spawnBall5);
 }
 
+// SECTION 8
 // score function
 function checkBallClick(x, y, size, spawnFunction) {
   let d = dist(mouseX, mouseY, x, y);
