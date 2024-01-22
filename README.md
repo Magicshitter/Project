@@ -9,6 +9,12 @@
 
 - Organization is max
 
+- Dont get to score 100
+
 - Uses variables (ALOT)
 
 - 100% mark potential
+
+- Stuff Straight from the learning github
+
+- Special feature: A lot of useless code
